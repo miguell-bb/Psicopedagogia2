@@ -1,0 +1,32 @@
+.navbar {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(11, 4, 67);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div {
+    text-align: center;
+    color: #05164a;
+}
+
+body {
+    background-color: rgb(11, 25, 85);
+    color: #ffffff;
+}
+
+.a {
+    margin: -200px;
+}
+
+.b{
+    margin: -200px;
+}
