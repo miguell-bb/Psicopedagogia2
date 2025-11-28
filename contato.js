@@ -1,9 +1,9 @@
 try {
     const form = document.querySelector("form") ?? null;
-    const nomeInput = document.querySelector("#nome");
-    const assuntoSelect = document.querySelector("#assunto");
-    const mensagemTextarea = document.querySelector("#mensagem")
-    const enviarBtn = document.querySelector("#enviar-btn");
+    const nomeInput = document.querySelector("nome");
+    const assuntoSelect = document.querySelector("assunto");
+    const mensagemTextarea = document.querySelector("mensagem")
+    const enviarBtn = document.querySelector("enviar-btn");
 
     function validarFormulario(evento) {
         evento.preventDefault();
