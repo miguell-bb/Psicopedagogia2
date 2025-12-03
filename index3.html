@@ -1,49 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplos!</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contato - Pedagogia</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="navbar">
-        <a href="index.html">Inicio</a>
-         <a href="index2.html">Por que é impotante?</a>
-         <a href="index3.html">Exemplos</a>
-          <a href="index4.html">Informações</a>
-          <a href="contato.html">Formulario</a>
-         <a href="index5.html">Agradacimentos</a>
-</div>
-<center>
-<h2>Como ela ajuda?</h2>
-    
-<br>Muita gente só percebe a força da pedagogia
- <br>e da psicopedagogia quando vê, na prática, como elas mudam vidas.
- <br> Imagine uma criança que tem dificuldade para ler: a pedagogia entra
-   <br>com métodos e atividades que estimulam a leitura de forma divertida, enquanto
-    <br>a psicopedagogia ajuda a entender se essa dificuldade vem de questões emocionais, de atenção
-    <br> ou até de autoestima. Juntas, elas conseguem transformar um momento de frustração em conquista.
 
-<br>Outro exemplo é aquele aluno que “não para quieto” em
- <br>sala. Em vez de rotular, o olhar psicopedagógico identifica
-  <br>possíveis causas — como TDAH ou ansiedade — e o pedagogo adapta 
- <br>as estratégias, criando atividades mais dinâmicas. Assim, o que antes
-   <br>era visto como problema vira oportunidade de aprender de um jeito diferente.
+<header>
+    <div class="logo">Pedagogia</div>
+    <nav id="menu">
+        <a href="index.html">Início</a>
+        <a href="index2.html">Sobre</a>
+        <a href="index3.html" class="active">Contato</a>
+    </nav>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
 
-<br>Até mesmo com adultos esse trabalho é essencial: muitas pessoas voltam
- <br>a estudar depois de anos e sentem insegurança. A pedagogia organiza o 
- <br>ensino de forma acessível, e a psicopedagogia ajuda a lidar com bloqueios 
- <br>emocionais, mostrando que nunca é tarde para aprender.
+<section class="content">
+    <h1>Contato</h1>
+    <p>Preencha o formulário abaixo para entrar em contato.</p>
 
-<br>No fim das contas, quando pedagogia e psicopedagogia se encontram,
- <br>a educação ganha um rosto mais humano e acolhedor.
+    <form id="formContato">
+        <label>Seu Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
 
-<br><img class="b" src="transferir__18_-removebg-preview.png" alt="">
- </center>
- <footer> by:Miguel
-        26/09/2025
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Digite seu email">
 
-    </footer>
+        <label>Mensagem:</label>
+        <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+        <p id="msgStatus" class="status"></p>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 • Site de Pedagogia</p>
+</footer>
+
+<script src="java.js"></script>
 </body>
 </html>
